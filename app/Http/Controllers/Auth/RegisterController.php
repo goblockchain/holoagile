@@ -51,7 +51,8 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
-            'linkedin' => 'string|max:300',
+            'linkedin' => 'max:300',
+            'terms' => 'required'
         ]);
     }
 

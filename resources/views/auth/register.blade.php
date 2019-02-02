@@ -106,7 +106,7 @@
                 <div class="col-xs-8">
                     <div class="checkbox icheck">
                         <label>
-                            <input type="checkbox"> Eu concordo com os <a href="#">termos</a>
+                            <input type="checkbox" class="form-control" name="terms" value="1"> Eu concordo com os <a href="#">termos</a>
                         </label>
                     </div>
                 </div>

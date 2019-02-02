@@ -91,6 +91,17 @@
                 @endif
             </div>
 
+            <div class="form-group has-feedback{{ $errors->has('linkedin') ? ' has-error' : '' }}">
+                <input type="text" class="form-control" name="linkedin" value="{{ old('linkedin') }}" placeholder="Linkedin profile">
+                <span class="glyphicon glyphicon-user form-control-feedback"></span>
+
+                @if ($errors->has('linkedin'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('linkedin') }}</strong>
+                    </span>
+                @endif
+            </div>
+
             <div class="row">
                 <div class="col-xs-8">
                     <div class="checkbox icheck">
